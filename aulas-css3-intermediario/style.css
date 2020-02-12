@@ -1,10 +1,12 @@
-/*.conteudo {
+/* MODELO-CAIXA.HTML
+
+.conteudo {
 	border: 1px solid red;
 	padding: 20px;
 	margin: 10px;
 
 	width: 150px;
-}*/
+}
 
 #noticias {
 	background: #cdcdcd;
@@ -16,4 +18,32 @@ h2 {
 	margin: 0px;
 }
 
+	FIM MODELO-CAIXA.HTML
+*/
 
+.conteudo {
+	background: #45adc8;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+
+.conteudo2 {
+	background: red;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+
+.clear {
+	clear: left; /* both = ambos*/
+}
+
+#principal {
+	border: 1px solid red;
+	background: #cdcdcd;
+}
