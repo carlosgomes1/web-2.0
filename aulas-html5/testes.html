@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Developer Caco </title>
+	<meta charset="utf-8"> <!-- Está mostrando ao web browser que deve usar todo tipo de acentuação. -->
+</head>
+<body>
+
+	<h1> Sobre a empresa </h1> 
+
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus ligula et facilisis tincidunt. Nulla rhoncus nec lacus id pulvinar. Nunc porta orci sit amet suscipit tempus. Integer non lacus mi. Nulla justo urna, fringilla sed feugiat nec, malesuada nec dui. Pellentesque at ex eget neque lobortis varius. Mauris neque mauris, tristique quis porttitor sed, accumsan eleifend purus. </p>
+
+	<hr>
+
+	<p> Praesent tincidunt, risus non consequat vestibulum, sem velit placerat nulla, nec sagittis nibh arcu sit amet neque. Sed non consequat nunc. Sed condimentum est lorem. Suspendisse diam eros, gravida ut egestas sit amet, sagittis in purus. Nulla sed sem luctus, molestie leo nec, vestibulum purus. </p>
+
+	<b> Esse é um texto em negrito! </b> <br>
+	<strong> Esse também é um texto negrito, mas de uma forma mais atualizada! </strong> <br>
+
+	<i> Esse é
+	 um texto itálico! </i> <br>
+	<em> Esse também é um texto itálico, mas de uma forma mais atualizada! </em> <br>
+
+	<u> Esse é um texto com underline em baixo! </u> <br>
+	<strike> Texto cortado! </strike> <br><br> 
+
+	<h2> Lista de Compras </h2>
+	<!-- Circle, square, disc --> 
+	<ul type="circle"> <!-- Muda o desenho do item, por padrão circulo pintado, circle  --> 
+		<li> Notebook </li>
+		<li> PC Gamer </li> 
+	</ul>
+
+	<br><br>
+
+	<h2> Mapa do Site! </h2>
+	<ul>
+		<li> Home </li>
+		<li> Contato </li>
+		<li> Sobre </li>
+	</ul>
+
+	<h2> Perguntas </h2>
+	<!-- 1, A, a, I, i -->
+	<ol type="I">
+		<li> E ai? </li>
+		<li> Caco? </li>
+	</ol>
+
+	<img src="imagens/ferrari.jpg" width="200">
+	<img src="https://pm1.narvii.com/6439/28ce4cab04690c85acf632937a59f3c7ba12a16b_00.jpg" width="200">
+
+	<table border="2"> 
+		<tr>
+			<th> Código </th>
+			<th> Produto </th>
+			<th> Preço </th>
+		</tr>
+		<tr>
+			<td> 00001 </td>
+			<td> <img src="imagens/ferrari.jpg" width="200"> </td>
+			<td> 5400 </td>
+		</tr>
+		<tr>
+			<td rowspan="2"> Desconto </td>
+			<td colspan="2"> Cupom CUPONOMIA1 R$15 </td>
+		</tr>
+		<tr>
+			<td colspan="2"> Cupom CUPONOMIA2 R$15 </td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<table border="1" width="50%">
+		<tr>
+			<th> Posição </th>
+			<th> Nome </th>
+			<th> Jogos </th>
+			<th> Gols </th>
+			<th> Assistências </th>
+		</tr>
+		<tr>
+			<td> PD </td>
+			<td> Lionel Messi </td>
+			<td> 710 </td>
+			<td> 689 </td>
+			<td> 415 </td>
+		</tr>
+		<tr>
+			<td> CA </td>
+			<td> Cristiano Ronaldo </td>
+			<td> 946 </td>
+			<td> 710 </td>
+			<td> 340 </td>
+		</tr>
+		<tr>
+			<td> PE </td>
+			<td> Neymar JR </td>
+			<td> 560 </td>
+			<td> 390 </td>
+			<td> 190 </td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<h2> LOGIN </h2>
+	<form>
+		
+		Login: <br>
+		<input type="text" name="login"> <br>
+
+		Senha: <br>
+		<input type="password" name="senha"> <br>
+
+		<input type="submit" name="btnLogar" value="Logar">
+
+	</form>
+
+	<h2> CADASTRE=SE </h2>
+	<form>
+		Login: <br>
+		<input type="text" name="login"> <br>
+
+		Sexo: <br>
+		<input type="radio" name="sexo" value="M"> Masculino <br>
+		<input type="radio" name="sexo" value="F"> Feminino <br>
+
+		Interesses<br>
+		<input type="checkbox" name="interesses"> Futebol <br>
+		<input type="checkbox" name="interesses"> Cursos <br>
+		<input type="checkbox" name="interesses"> F1 <br>
+		<input type="checkbox" name="interesses"> Basquete <br>
+
+		Estado <br>
+		<select name="estado">
+			<option value="sp"> SP </option>
+			<option value="rj"> RJ </option>
+			<option value="rs"> RS </option>
+		</select>
+
+		Observações <br>
+		<textarea></textarea> <br>
+
+		<input type="submit" value="cadastrar">
+	</form>
+
+	<br><br>
+	<hr>
+
+	<h2> Caracteres especiais </h2>
+	&lt;p&gt;
+
+	Contato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sobre
+
+</body>
+</html>

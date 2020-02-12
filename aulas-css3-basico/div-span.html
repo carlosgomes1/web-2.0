@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- ATENÇÃO!!! DIVS SAO BLOCKS, OCUPAM TODO O WIDTH DA TELA, SPAN SÃO INLINE, OU SEJA, UM ACABA, OUTRO COMEÇA!!-->
+		<title> Div e Span </title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#topo {
+				background: blue;
+			}
+
+			#conteudo-principal {
+				background: red;
+			}
+
+			#rodape {
+				background: green;
+			}
+
+			#developer {
+				background: pink;
+			}
+
+			.blue {
+				background: blue;
+			}
+
+			.produto {
+				background: grey;
+				margin: 10px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="topo">
+			
+			<img src="imagens/caco.jpg" width="120" height="120">
+
+			<ul>
+				<li> Home </li>
+				<li> Produtos </li>
+				<li> Contato </li>
+			</ul>
+
+		</div>
+
+		<div id="conteudo-principal">
+			
+			<div class="produto">
+				Produto 1
+			</div>
+
+			<div class="produto">
+				Produto 2
+			</div>
+
+			<div class="produto">
+				Produto 3
+			</div>
+
+		</div>
+
+		<div id="rodape">
+			
+			Todos os <span class="blue"> direitos </span> reservados
+
+		</div>
+
+		<span id="developer">
+			Caco
+		</span>
+		<span>
+			Gomes
+		</span>
+
+	</body>
+</html>
