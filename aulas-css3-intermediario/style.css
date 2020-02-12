@@ -21,6 +21,8 @@ h2 {
 	FIM MODELO-CAIXA.HTML
 */
 
+/* ELEMENTOS-FLUTUANTES.HTML
+
 .conteudo {
 	background: #45adc8;
 	border: 1px solid gray;
@@ -40,10 +42,40 @@ h2 {
 }
 
 .clear {
-	clear: left; /* both = ambos*/
+	clear: left;  both = ambos
 }
 
 #principal {
 	border: 1px solid red;
 	background: #cdcdcd;
+}
+
+FIM ELEMENTOS-FLUTUANTES.HTML
+*/
+
+body {
+	background: #f4f4f4;
+}
+
+#principal {
+	width: 880px;
+}
+
+.noticia {
+	background: #e5e5e5;
+	padding: 5px;
+	width: 270px;
+	float: left;
+	margin: 5px;
+}
+.clear {
+	clear: both;
+}
+
+.imagem-galeria {
+	background: white;
+	width: 270px;
+	padding: 5px;
+	float: left;
+	margin: 5px;
 }
