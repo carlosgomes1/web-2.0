@@ -53,6 +53,8 @@ h2 {
 FIM ELEMENTOS-FLUTUANTES.HTML
 */
 
+/* ELEMENTOS-FLUTUANTES-PRATICA.HTML
+
 body {
 	background: #f4f4f4;
 }
@@ -79,3 +81,68 @@ body {
 	float: left;
 	margin: 5px;
 }
+
+FIM ELEMENTOS-FLUTUANTES-PRATICA.HTML
+*/
+
+/* ELEMENTOS-INLINE-BLOCK.HTML
+
+.borda1 {
+	border: 1px solid red;
+	display: inline-block;
+}
+
+.borda {
+	border: 1px solid red;
+	display: inline;
+}
+
+FIM ELEMENTOS-INLINE-BLOCK.HTML
+*/
+
+/* INICIO POSICIONAMENTOS.HTML
+
+body {
+	background: #007fc7;
+}
+
+#conteiner {
+	background: #fff;
+	width: 800px;
+	margin: 10px auto;
+	padding: 3px 10px;
+	position: relative;
+}
+
+h1 {
+	position: static;
+}
+p {
+	position: static;
+	width: 400px;
+}
+
+.relative {
+	border: 1px solid red;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.absolute {
+	position: absolute;
+	border: 1px solid blue;
+	right: 5px;
+	top: 70px;
+}
+
+.fixed {
+	position: fixed;
+	background: #cdcdcd;
+	border: 1px solid blue;
+	left: 5px;
+	top: 5px;
+}
+
+FIM POSICIONAMENTOS.HTML
+*/
