@@ -1,4 +1,19 @@
-.conteudo {
+/*.conteudo {
 	border: 1px solid red;
-	padding: 5px;
+	padding: 20px;
+	margin: 10px;
+
+	width: 150px;
+}*/
+
+#noticias {
+	background: #cdcdcd;
+	padding: 10px;
 }
+
+h2 {
+	border: 1px solid orange;
+	margin: 0px;
+}
+
+
