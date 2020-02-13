@@ -146,3 +146,65 @@ p {
 
 FIM POSICIONAMENTOS.HTML
 */
+
+/* INICIO SOBREPONDO-ELEMENTOS.HTML
+
+.conteudo1 {
+	border: 1px solid red;
+	background: orange;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 2;
+}
+
+.conteudo2 {
+	border: 1px solid red;
+	background: green;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	z-index: 1;
+}
+
+.conteudo3 {
+	border: 1px solid red;
+	background: cyan;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 120px;
+	left: 120px;
+	z-index: 3;
+}
+
+	FIM SOBREPONDO-ELEMENTOS.HTML
+*/
+
+a {
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+/* Links não visitados */
+a:link {
+	color: #b9c941;
+}
+
+/* Links visitados */
+a:visited {
+	color: #c0c0c0;
+}
+
+/* Links hover, passa o cursor sobre o link */
+a:hover {
+	color: white;
+	background: cyan;
+}
+
+/* Links ativos, quando clicados (clica e segura) */
+a:active {
+	color: #e4f371;
+}
