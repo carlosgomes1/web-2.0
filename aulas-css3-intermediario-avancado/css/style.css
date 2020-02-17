@@ -1,17 +1,17 @@
 /* Seletor universal */
-
+/*
 * {
 	/*border: 1px solid red;*/
 }
 
 /* Seletor de texto */
-
+/*
 h1 {
 	color: green;
 }
 
 /* Seletores de classe */
-
+/*
 .verde {
 	color: green;
 }
@@ -21,30 +21,53 @@ p.verde {
 }
 
 /* Seletores ID */
-
+/*
 #cabecalho {
 	border: 1px solid black;
 }
 
 /* Seletor de filho */
-
+/*
 li>a {
 	color: red;
 	text-decoration: none;
 }
 
 /* Seletor descendente */
-
+/*
 li a {
 	color: green;
 }
 
 /* Seletor de irmão adjacente */
-
+/*
 h1 + p {
 	color: green;
 }
 
-/* Seletor de irmão geral */
-  b0
- 
+/* Seletor de irmão geral *//*
+h1 ~ p {
+
+} */
+
+/*
+ HERANÇAAAAAAAAAAAA
+body {
+	color: red;
+	border: 1px solid blue;
+	background: grey;
+}
+
+p {
+	color: red !important;
+}
+
+p {
+	color: blue;
+}
+
+*/
+
+#navegacao-lateral {
+	color: red;
+}
