@@ -1,10 +1,12 @@
-#navegacao-lateral {
+/* NAVEGACAO VERTICAL
+
+#navegacao {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-#navegacao-lateral a:link, #navegacao-lateral a:visited {
+#navegacao a:link, #navegacao a:visited {
 	width: 200px;
 	height: 40px;
 	display: block;
@@ -12,9 +14,442 @@
 	text-decoration: none;
 	text-indent: 40px;
 	line-height: 40px;
-	background: url(../imagens/menu.png) no-repeat left center;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left center;
+}
+#navegacao a:hover, #navegacao .selecionado a {
+	background-position: right;
+	background-color: #f99200;
+	color: white;
 }
 
-#navegacao-lateral a:hover {
-	background-position: right;
+FIM NAVEGACAO VERTICAL
+*/
+/* NAVEGACAO HORIZONTAL
+
+
+#navegacao {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 720px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
 }
+
+#navegacao li {
+	float: left;
+}
+
+#navegacao li a:link, #navegacao li a:visited {
+	text-decoration: none;
+	display: block;
+	padding: 0 2.3em;
+	line-height: 2.3em;
+	color: #FFF;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+#navegacao .primeiro a{
+	background: none;
+}
+
+#navegacao li a:hover, #navegacao .selecionado a{
+	color: #085662;
+	background: #44cade;
+}
+
+FIM NAVEGACAO HORIZONTAL
+*/
+
+/* NAVEGACAO COM ABAS
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;	
+}
+
+#navegacao {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 720px;
+}
+
+#navegacao li {
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+#navegacao li a:link, #navegacao li a:visited{
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	color: #FFF;
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
+}
+
+#navegacao a:hover {
+	color: #894a1f;
+}
+
+#navegacao #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+
+}
+
+#navegacao #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+
+			FIM NAVEGACAO COM ABAS
+*/
+
+/* LAYOUT FIXO
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	width: 720px;
+	margin: 0 auto;
+	background: #FFF;
+} 
+
+#marca {
+	height: 100px;
+	background: #9e9e9e;
+	text-align: center;
+	line-height: 100px;
+}
+
+#conteudo {
+	width: 520px;
+	float: right;
+}
+
+#conteudo-principal {
+	width: 320px;
+	float: left;
+}
+
+#conteudo-secundario {
+	width: 180px;
+	float: right;
+	background: #d1d1d1;
+}
+
+h2 {
+	padding: 0 15px;
+}
+
+p {
+	padding: 0 10px 10px 10px;
+}
+
+#navegacao {
+	width: 180px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+#navegacao {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#navegacao a:link, #navegacao a:visited {
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-indent: 60px;
+	line-height: 50px;
+}
+
+#navegacao a:hover {
+	color: white;
+	background-color: #000;
+}
+
+			FIM LAYOUT FIXO
+*/
+
+/* 				LAYOUT LIQUIDO
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	width: 85%;
+	margin: 0 auto;
+	background: #FFF;
+	min-width: 720px;
+	max-width: 960px;
+} 
+
+#marca {
+	height: 100px;
+	width: 100%;
+	background: #9e9e9e;
+	text-align: center;
+	line-height: 100px;
+}
+
+#conteudo {
+	width: 80%;
+	float: right;
+}
+
+#conteudo-principal {
+	width: 68%;
+	float: left;
+}
+
+#conteudo-secundario {
+	width: 30%;
+	float: right;
+	background: #d1d1d1;
+	border: 1px solid red;
+}
+
+h2 {
+	padding: 0 15px;
+}
+
+p {
+	padding: 0 10px 10px 10px;
+}
+
+#navegacao {
+	width: 18%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+#navegacao {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#navegacao a:link, #navegacao a:visited {
+	height: 50px;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-indent: 00%;
+	line-height: 50px;
+}
+
+#navegacao a:hover {
+	color: white;
+	background-color: #000;
+}
+
+				FIM LAYOUT LIQUIDO
+*/
+
+/* 				IMAGENS LIQUIDAS
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	width: 85%;
+	margin: 0 auto;
+	background: #FFF;
+	min-width: 720px;
+	max-width: 960px;
+} 
+
+#marca {
+	height: 200px;
+	width: 100%;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+	color: #FFF;
+}
+
+#conteudo {
+	width: 80%;
+	float: right;
+}
+
+#conteudo-principal {
+	width: 68%;
+	float: left;
+}
+
+#conteudo-secundario {
+	width: 30%;
+	float: right;
+	background: #d1d1d1;
+	border: 1px solid red;
+}
+
+img.img-noticia {
+	width: 90%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+#imagem {
+	width: 90%;
+	overflow: hidden;
+}
+
+h2 {
+	padding: 0 15px;
+}
+
+p {
+	padding: 0 10px 10px 10px;
+}
+
+#navegacao {
+	width: 18%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+#navegacao {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#navegacao a:link, #navegacao a:visited {
+	height: 50px;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-indent: 00%;
+	line-height: 50px;
+}
+
+#navegacao a:hover {
+	color: white;
+	background-color: #000;
+}
+
+				FIM IMAGENS LIQUIDAS
+*/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	width: 720px;
+	margin: 0 auto;
+	background: #fff url(../imagens/coluna.png) repeat-y left top;
+} 
+
+#marca {
+	height: 100px;
+	background: #9e9e9e;
+	text-align: center;
+	line-height: 100px;
+}
+
+#conteudo {
+	width: 520px;
+	float: right;
+}
+
+#conteudo-principal {
+	width: 320px;
+	float: left;
+}
+
+img.img-noticia {
+	width: 90%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+#conteudo-secundario {
+	width: 180px;
+	float: right;
+	background: #d1d1d1;
+}
+
+h2 {
+	padding: 0 15px;
+}
+
+p {
+	padding: 0 10px 10px 10px;
+}
+
+#navegacao {
+	width: 180px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+#navegacao {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#navegacao a:link, #navegacao a:visited {
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-indent: 60px;
+	line-height: 50px;
+}
+
+#navegacao a:hover {
+	color: white;
+	background-color: #000;
+}
+
+			FIM LAYOUT FIXO
+*/
