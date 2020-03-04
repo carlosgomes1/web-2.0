@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Degradê e Transparência </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        
+        <style>
+            #caixa {
+                width: 300px;
+                height: 300px;
+                background: url(imagens/camera.png);
+                float: left;
+            }
+
+            #caixa h1 {
+                background: rgba(255, 255, 255, 0.3);
+            }
+
+            #caixa2 {
+                width: 300px;
+                height: 300px;
+                background: linear-gradient(to left,#acc, #cc1acc);
+                background: linear-gradient(148deg, gray, cyan, yellow);
+                background: radial-gradient(red, blue);
+                float: left;
+                margin-left: 40px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="caixa">
+            <h1> Lorem ipsum sit dolor amet. </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Phasellus sollicitudin, tortor sit amet elementum pulvinar,
+                 nibh diam elementum ante, id tincidunt diam orci sit amet elit.
+            </p>
+        </div>
+        <div id="caixa2">
+            <h1> Lorem ipsum sit dolor amet. </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Phasellus sollicitudin, tortor sit amet elementum pulvinar,
+                 nibh diam elementum ante, id tincidunt diam orci sit amet elit.
+            </p>
+        </div>
+
+    </body>
+</html>
