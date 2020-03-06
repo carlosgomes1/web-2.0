@@ -13,20 +13,56 @@
   </head>
   <body style="margin-bottom: 200px; padding: 16px;">
    
+    <!-- Texto justificado -->
+    <p class="text-justify">
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetir adipiscing elit.
+    </p>
+
+    <br><br>
+
+    <!-- Alinhamento responsivo
+      class-text-alinhamento
+        tela: sm, md, lg, xl
+        alinhamento: left, center, right
+    -->
+
+    <p class="text-sm-right"> Tela &gt; = 576px</p> <!-- Small -->
+    <p class="text-md-center"> Tela &gt; = 768px</p> <!-- Medium -->
+    <p class="text-lg-right"> Tela &gt; = 992px</p> <!-- Large -->
+    <p class="text-xl-right"> Tela &gt; = 1200px</p>  <!-- Extra Large -->
+
+    <br><br>
+
+    <!-- Elemento block para inline -->
+
+    <h1 class="bg-success d-inline"> Lorem ipsum dolor </h1>
+    <p class="bg-success">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <br><br>
+
+    <!-- Elemento inline para block -->
     
+    <span class="bg-success d-block"> Lorem ipsum dolor 1 </span>
+    <span> Lorem ipsum dolor 2 </span>
 
+    <!-- Elemento inline-block -->
 
-
-
-
-
-
-
-
-
-
-
-
+    <div class="bg-warning">
+      <h3 class="bg-success d-inline-block"> Lorem ipsum </h3>
+      <h3 class="bg-success d-inline-block" style="margin-top: 50px; width: 400px;"> Lorem ipsum dolor</h3>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
