@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Navegações - Bootstrap </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body style="margin-bottom: 200px; padding: 16px;">
+
+        <!-- Navegacao 
+            tipos:
+                nav-pills
+                nav-tabs
+            opcoes de alinhamento:
+                justify-content-center
+                justify-content-end
+                flex-column    
+        -->
+
+        <h2> Navegação simples com active em pills </h2>
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a href="" class="nav-link active"> Home </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link"> Contact </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link disabled"> About Us </a>
+            </li>
+        </ul>
+
+        <h2> Navegação simples com abas active em tabs</h2>
+        <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a href="" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active"> Contact </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link"> About Us </a>
+            </li>
+        </ul>
+
+        <h2> Barra de navegação simples </h2>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <!-- Logo -->
+            <a href="" class="navbar-brand"> Dev Carlos Gomes </a>
+
+            <!-- Navegação -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a href="" class="nav-link"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"> About Me </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"> Contact </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2> Barra de navegação com menu responsivo </h2>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <!-- Logo -->
+            <a href="" class="navbar-brand"> Dev Carlos Gomes </a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegação -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> About Me </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2> Barra de navegação com formulário </h2>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <!-- Logo -->
+            <a href="" class="navbar-brand"> Dev Carlos Gomes </a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegação -->
+            <div class="collapse navbar-collapse" id="navbar2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> About Me </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Contact </a>
+                    </li>
+                </ul>
+
+                <!-- Formulário -->
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control" placeholder="Pesquisar...">
+                    <button class="btn btn-outline-warning ml-1"> OK </button>
+                </form>
+            </div>
+        </nav>
+
+        <h2> Barra de navegação com dropdown </h2>
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+            <!-- Logo -->
+            <a href="" class="navbar-brand"> Dev Carlos Gomes </a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegação -->
+            <div class="collapse navbar-collapse" id="navbar2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"> About Me </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"> Contact </a>
+
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item"> WhatsApp </a>
+                            <a href="" class="dropdown-item"> Facebook </a>
+                            <a href="" class="dropdown-item"> Instagram </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+
+        <h2> Cores </h2>
+        <ul class="nav nav-pills justify-content-end navbar-dark bg-info" >
+            <li class="nav-item">
+                <a href="" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active"> Contact </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link"> About Us </a>
+            </li>
+        </ul>
+
+        <h1> Parágrafo qualquer aqui </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Pellentesque id tristique sapien. Nam vestibulum urna massa,
+              a auctor orci lacinia vel. Mauris condimentum quis ligula
+               vel tincidunt. Nam in finibus leo. Suspendisse molestie
+                pellentesque dui, eu ornare lectus egestas quis. Suspendisse
+                 eleifend pulvinar nibh eu venenatis. Interdum et malesuada
+                  fames ac ante ipsum primis in faucibus. Integer urna sapien,
+                   interdum in rutrum non, pellentesque at massa. </p>
+
+        <h1> Parágrafo qualquer aqui </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Pellentesque id tristique sapien. Nam vestibulum urna massa,
+              a auctor orci lacinia vel. Mauris condimentum quis ligula
+               vel tincidunt. Nam in finibus leo. Suspendisse molestie
+                pellentesque dui, eu ornare lectus egestas quis. Suspendisse
+                 eleifend pulvinar nibh eu venenatis. Interdum et malesuada
+                  fames ac ante ipsum primis in faucibus. Integer urna sapien,
+                   interdum in rutrum non, pellentesque at massa. </p>
+
+        <h1> Parágrafo qualquer aqui </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Pellentesque id tristique sapien. Nam vestibulum urna massa,
+              a auctor orci lacinia vel. Mauris condimentum quis ligula
+               vel tincidunt. Nam in finibus leo. Suspendisse molestie
+                pellentesque dui, eu ornare lectus egestas quis. Suspendisse
+                 eleifend pulvinar nibh eu venenatis. Interdum et malesuada
+                  fames ac ante ipsum primis in faucibus. Integer urna sapien,
+                   interdum in rutrum non, pellentesque at massa. </p>
+        
+
+        <!-- Alinhamentos 
+            op:
+                fixed-top
+                fixed-bottom
+                sticky
+        -->
+
+        <h2 class="mt-5"> Alinhamentos </h2>
+        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark mb-3">
+            <!-- Logo -->
+            <a href="" class="navbar-brand"> Dev Carlos Gomes </a>
+
+            <!-- Navegação -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a href="" class="nav-link"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"> About Me </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"> Contact </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1> Parágrafo qualquer aqui </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Pellentesque id tristique sapien. Nam vestibulum urna massa,
+              a auctor orci lacinia vel. Mauris condimentum quis ligula
+               vel tincidunt. Nam in finibus leo. Suspendisse molestie
+                pellentesque dui, eu ornare lectus egestas quis. Suspendisse
+                 eleifend pulvinar nibh eu venenatis. Interdum et malesuada
+                  fames ac ante ipsum primis in faucibus. Integer urna sapien,
+                   interdum in rutrum non, pellentesque at massa. </p>
+
+        <h1> Parágrafo qualquer aqui </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Pellentesque id tristique sapien. Nam vestibulum urna massa,
+              a auctor orci lacinia vel. Mauris condimentum quis ligula
+               vel tincidunt. Nam in finibus leo. Suspendisse molestie
+                pellentesque dui, eu ornare lectus egestas quis. Suspendisse
+                 eleifend pulvinar nibh eu venenatis. Interdum et malesuada
+                  fames ac ante ipsum primis in faucibus. Integer urna sapien,
+                   interdum in rutrum non, pellentesque at massa. </p>
+
+        <h1> Parágrafo qualquer aqui </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Pellentesque id tristique sapien. Nam vestibulum urna massa,
+              a auctor orci lacinia vel. Mauris condimentum quis ligula
+               vel tincidunt. Nam in finibus leo. Suspendisse molestie
+                pellentesque dui, eu ornare lectus egestas quis. Suspendisse
+                 eleifend pulvinar nibh eu venenatis. Interdum et malesuada
+                  fames ac ante ipsum primis in faucibus. Integer urna sapien,
+                   interdum in rutrum non, pellentesque at massa. </p>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        </body>
+</html>
