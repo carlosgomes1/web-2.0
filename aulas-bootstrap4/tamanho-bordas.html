@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Tamanho e bordas - Bootstrap </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body style="margin-bottom: 200px; padding: 16px;">
+
+        <!-- Classes de largura -->
+
+        <div class="bg-primary w-25"> width 25% </div>
+        <div class="bg-primary w-50"> width 50%% </div>
+        <div class="bg-primary w-75"> width 75% </div>
+        <div class="bg-primary w-100"> width 100% </div>
+        <div class="bg-primary w-auto"> width auto </div>
+
+        <!-- Classes de altura -->
+
+        <div class="w-50 m-auto border border-primary" style="height: 300px;">
+            <div class="bg-warning d-inline-block h-25"> height 25% </div>
+            <div class="bg-warning d-inline-block h-50"> height 50% </div>
+            <div class="bg-warning d-inline-block h-75"> height 75% </div>
+            <div class="bg-warning d-inline-block h-100"> height 100% </div>
+            <div class="bg-warning d-inline-block h-auto"> height auto </div>
+        </div>
+
+        <!-- Bordas
+            border          => todas as bordas
+            border-top      => borda superior
+            border-bottom   => borda inferior
+            border-left     => borda esquerda
+            border-right    => borda direita
+
+            Cores
+
+            border-cor:
+            primary     secondary   success     info    warning     danger  light   dark    white
+
+            Radius
+            rounded, rounded-top, rounded-right, rounded-left, rounded-bottom, rounded-circle
+            rounded-pill, rounded-0(padrao)
+
+            Tamanhos
+            rounded-lg - larger
+            rounded-sm - small
+        -->
+
+        <div class="bg-white mb-2 border border-danger rounded"> todas as bordas </div>
+        <div class="bg-white mb-2 border-top border-danger"> borda superior </div>
+        <div class="bg-white mb-2 border-bottom border-danger"> borda inferior </div>
+        <div class="bg-white mb-2 border-left border-danger"> borda esquerda </div>
+        <div class="bg-white mb-2 border-right border-danger"> borda direita </div>
+        <div class="bg-white mb-2 border border-danger rounded-circle d-inline"> Caco</div>
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        </body>
+</html>
