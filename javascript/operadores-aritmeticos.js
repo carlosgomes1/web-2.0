@@ -1,0 +1,11 @@
+/*
+
++ = SOMA
+- = SUBTRAÇÃO
+* = MULTIPLICAÇÃO
+/ = DIVISÃO
+% = MÓDULO(RESTO DE DIVISAO)
+++ = INCREMENTO DE 1
+-- = DECREMENTO DE 1
+
+*/
