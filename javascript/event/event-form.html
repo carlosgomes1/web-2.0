@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Event form </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--
+
+            onfocus
+            onblur
+            onchange
+    
+        -->
+
+        <form>
+            <fieldset>
+                <legend> Teste form </legend>
+
+                <label for="login"> Login </label>
+                <input onfocus="console.log('ON FOCUSSSSSS')" type="text" id="login">
+
+                <br>
+
+                <label for="senha"> Senha </label>
+                <input onblur="console.log('ON BLURRRR')" type="password" id="senha">
+
+                <br>
+
+                <select onchange="alert('ESTADO MODIFICADO')">
+                    <option> -- Selecione -- </option>
+                    <option value="1"> -- Primeira opção -- </option>
+                    <option value="2"> -- Segunda opção -- </option>                    
+                </select>
+            </fieldset>
+        </form>
+
+
+        <script src="event-js/event-form.js"></script>
+    </body>
+</html>

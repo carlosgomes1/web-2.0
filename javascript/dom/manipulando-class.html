@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Cores aleatórias </title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                background: #c6c6c6;
+            }
+
+            #area {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            #desafio {
+                margin: 0 auto;
+                width: 260px;
+            }
+
+            #desafio button {
+                height: 40px;
+                width: 80px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            .estilo1 {
+                text-align: center;
+                background: black;
+                color: white;
+            }
+
+            .estilo2 {
+                text-align: center;
+                background: white;
+                width: 400px;
+                padding: 40px;
+                border-radius: 26px;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+
+        
+            <h2> Manipulando classes </h2>
+
+        <div id="desafio">    
+
+            <button type="button" onclick="modificarClasse('estilo1')"> Aplicar classe 1</button>
+            <button type="button" onclick="modificarClasse('estilo2')"> Aplicar classe 2 </button>
+
+        </div>
+
+        <hr>
+
+        <div id="area" class="estilo1"> Modificando a classe do elemento </div>
+
+
+        <script src="dom-js/manipulando-class.js"></script>
+    </body>
+</html>

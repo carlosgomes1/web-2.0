@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Cores aleatórias </title>
+        <meta charset="utf-8">
+
+        <style>
+            #area {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                background-color: gray;
+            }
+
+            #desafio {
+                margin: 0 auto;
+                width: 260px;
+            }
+
+            #desafio button {
+                height: 40px;
+                width: 80px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        
+            <h2> Manipulando estilos </h2>
+
+        <div id="desafio">    
+
+            <button type="button" onclick="modificarEstilo('#FF0000')"> Vermelho </button>
+            <button type="button" onclick="modificarEstilo('#00FF00')"> Verde </button>
+            <button type="button" onclick="modificarEstilo('#0000FF')"> Azul </button>
+
+        </div>
+
+        <hr>
+
+        <div id="area"></div>
+
+
+        <script src="dom-js/manipulando-estilos.js"></script>
+    </body>
+</html>
