@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> PRÁTICA - LOOPS </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <div id="body"></div>
+
+        <script>
+
+            for( var x = 1; x <= 10; x++ ) {
+                document.write('1 x ' + x + ' = ' + (x * 1) + "<br>")
+            }
+
+            document.write('<hr>')
+
+            var tab = parseInt(prompt("Digite um número: "))
+
+            for( var x = 1; x <= 10;  x++ ) {
+                document.write(tab + ' x ' + x + ' = ' + (tab * x) + '<br>')
+            }
+
+            document.write('<hr>')
+
+            var last = parseInt(prompt("Tabuada do número: "))
+            var last2 = parseInt(prompt("Quantas vezes?: "))
+
+            for( var x = 1; x <= last2;  x++ ) {
+                document.write(last + ' x ' + x + ' = ' + (last * x) + '<br>')
+            }
+
+            for( var x = 1; x <= 10; x++ ) {
+
+                for( var y = 1; y <= 10; y++ ) {
+                    document.write(x + ' x ' + y + ' = ' + (x * y) + '<br>')
+                }
+
+                document.write('<hr>')
+
+            }
+
+
+        </script>
+    </body>
+</html>

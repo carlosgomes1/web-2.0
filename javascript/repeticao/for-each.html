@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> PRÁTICA - LOOPS </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <div id="body"></div>
+
+        <script>
+
+            var listaConvidados = [
+                'Caco',
+                'Liz',
+                'Henry',
+                'Julia',
+                'Raquel',
+                'Wislow',
+                'Magno'
+            ]
+
+            console.log(listaConvidados)
+            console.log('------------------')
+
+            listaConvidados.forEach(function( valor, indice, array ) {
+                console.log(valor)
+
+                if( valor == 'Liz' ) {
+                    array[indice] = 'AGORA É LIZOCA'
+                }
+            }) // callback
+
+            console.log(listaConvidados)
+
+            
+
+        </script>
+    </body>
+</html>

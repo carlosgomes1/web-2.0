@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Método de pesquisa - Array </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <script>
+
+            // Se vier como -1, nao existe
+
+          var listaFrutas = [
+              'Banana',
+              'Maçã',
+              'Morango',
+              'Uva'
+          ]
+
+          listaFrutas.indexOf('Banana')
+
+          var pesquisa = prompt("Digite uma fruta para verificação na lista: ")
+          var indice = listaFrutas.indexOf(pesquisa)
+
+          if( indice >= 0 ) {
+            console.log("A fruta existe no sistema e está na posição: " + (indice + 1))
+          } else {
+            console.log("Não pudemos encontrar este item na lista")
+          }
+
+        </script>
+    </body>
+</html>

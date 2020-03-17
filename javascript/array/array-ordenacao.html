@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Método de pesquisa - Array </title>
+        <meta charset="utf-8">
+
+        
+    </head>
+
+    <body>
+
+        <script>
+
+            var listaFrutas = [
+              'Pêra',
+              'Maçã',
+              'Banana',
+              'Morango'
+            ]
+
+            // sort = organiza o array em ordem alfabética
+
+            console.log(listaFrutas)
+
+            console.log("------------------------------")
+            console.log("SORT: ")
+            console.log(listaFrutas.sort());
+            console.log("------------------------------")
+
+            
+            var listaNumeros = [
+                40,
+                21,
+                17,
+                3,
+                102,
+                87
+            ]
+
+            // PARA NUMEROS, UTILIZAR O SEGUINTE SORT ======= APENAS NUMEROSSSSSSSSSS
+
+            function ordenarNumeros( a, b ) {
+                return a - b
+            }
+
+            console.log("SORT COM FUNCTION: ")
+            console.log(listaNumeros.sort(ordenarNumeros));
+
+            
+        </script>
+    </body>
+</html>
