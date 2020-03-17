@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Adicionar e excluir itens de array </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <script>
+
+            var listaFrutas = [
+                'Banana',
+                'Morango',
+                'Uva'
+            ]
+
+            console.log(listaFrutas)
+
+            // incluir no fim do array
+
+            listaFrutas.push('Manga')
+            console.log(listaFrutas)
+
+            // incluir no começo do array
+
+            listaFrutas.unshift('Pêra')
+            console.log(listaFrutas)
+
+            // excluir do final
+
+            listaFrutas.pop()
+            console.log(listaFrutas)
+
+            // excluir do começo
+            listaFrutas.shift()
+            console.log(listaFrutas)
+
+
+            console.log("------------------------------------------")
+            /*   ARRAY MULTIDIMENSIONAL   */
+            var carrinho = []
+            carrinho['frutas'] = []
+            carrinho['carnes'] = []
+
+            carrinho['frutas'].push('Banana')
+            console.log(carrinho)
+
+            carrinho['carnes'].push('Patinho')
+            console.log(carrinho)
+
+
+        </script>
+    </body>
+</html>
