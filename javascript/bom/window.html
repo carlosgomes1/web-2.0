@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WINDOW </title>
+</head>
+<body>
+    <button onclick="criarNovaPag()" type="button"> PAG NOVA </button>
+    <button onclick="fecharjanela()" type="button"> FECHAR </button>
+
+    <script>
+        /*
+            open, close, moveTo, resizeTo
+        */
+
+
+        var janela
+
+        function criarNovaPag() {
+            janela =  window.open('', 'PAGINAZINHA', 'width=100, height=200')
+        }
+
+        function fecharjanela() {
+            janela.close()
+        }
+    </script>
+</body>
+</html>

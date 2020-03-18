@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tratamento de erro </title>
+</head>
+<body>
+    
+    <script>
+        /*
+            TRY, CATCH, FINALLY, THROW
+
+            TRY = tenta fazer algo passivel de erro.
+            CATCH = trata a informação caso o try der erro, como se fosse um if/else = recebe o erro (e) por parametro
+            FINALLY = sozinho = irá executar mesmo com erro, mas o erro vai dar do mesmo jeito // executa de qualquer forma
+            THROW = força a parada do script com um erro
+        */
+
+        // netflix
+
+
+        var video = []
+
+        video[1] = []
+        video[1]['nome'] = 'Dragon Ball Z'
+        video[1]['categoria'] = 'Anime'
+
+        function getVideo( video ) {
+
+            try {
+                console.log(video[0]['nome'])
+            } catch(erro) {
+                console.log(erro)
+                console.log('CATCH')
+                throw new Error('Houve um erro, mas não se preocupe, estamos trabalhando nisso!')
+            } finally {
+                console.log('FINALLY')
+            }
+
+
+
+        }
+
+        getVideo(video)
+
+    </script>
+</body>
+</html>
