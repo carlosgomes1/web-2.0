@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> POO - Abstração - Conta Bancária </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            class ContaBancaria {
+                constructor() {
+                    this.agencia
+                    this.numeroConta
+                    this.saldo
+                    this.limite
+                }
+
+                setAgencia( agencia ) {
+                    this.agencia = agencia
+                }
+
+                getAgencia() {
+                    return this.agencia
+                }
+
+                setNumeroConta( numeroConta ) {
+                    this.numeroConta = numeroConta
+                }
+
+                getNumeroConta() {
+                    return this.numeroConta
+                }
+
+                setSaldo( saldo ) {
+                    this.saldo = saldo
+                }
+
+                getSaldo() {
+                    return this.saldo
+                }
+
+                setLimite( limite ) {
+                    this.limite = limite
+                }
+
+                getLimite() {
+                    return this.limite
+                }
+
+                // acoes
+
+                depositar( valor ) {
+                    this.saldo += valor
+                }
+
+                sacar( valor ) {
+                    this.saldo -= valor
+                }
+
+                consultarSaldo() {
+                    return this.saldo
+                }
+            }
+
+            const conta1 = new ContaBancaria()
+
+            conta1.setAgencia(7131)
+            conta1.setNumeroConta(195708)
+            conta1.setSaldo(1000)
+            conta1.setLimite(3200)
+
+            console.log(conta1)
+            console.log(`Agência: ${ conta1.getAgencia() }, 
+            Conta: ${ conta1.getNumeroConta() }, 
+            Saldo: ${ conta1.consultarSaldo() }
+            `)
+
+            console.log('--------------------------------------')
+
+            conta1.depositar(740)
+
+            console.log(`Agência: ${ conta1.getAgencia() }, 
+            Conta: ${ conta1.getNumeroConta() }, 
+            Saldo: ${ conta1.consultarSaldo() }
+            `)
+
+            console.log('--------------------------------------')
+
+            conta1.sacar(368)
+            
+            console.log(`Agência: ${ conta1.getAgencia() }, 
+            Conta: ${ conta1.getNumeroConta() }, 
+            Saldo: ${ conta1.consultarSaldo() }
+            `)
+ 
+        </script>
+    </body>
+</html>

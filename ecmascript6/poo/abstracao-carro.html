@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> POO - Abstração - Carro </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            class Carro {
+                constructor() {
+                    this.marca
+                    this.modelo
+                    this.cor
+                    this.qtdePortas
+                }
+
+                setMarca( marca ) {
+                    this.marca = marca
+                }
+
+                getMarca() {
+                    return this.marca
+                }
+
+                setModelo( modelo ) {
+                    this.modelo = modelo
+                }
+
+                getModelo() {
+                    return this.modelo
+                }
+
+                setCor( cor ) {
+                    this.cor = cor
+                }
+
+                getCor() {
+                    return this.cor
+                }
+
+                setQtdePortas( qtdePortas ) {
+                    this.qtdePortas = qtdePortas
+                }
+
+                getQtdePortas() {
+                    return this.qtdePortas
+                }
+
+                // actions
+
+                acelerar() {
+                    console.log('Acelerando')
+                }
+
+                ligar() {
+                    console.log('Ligando')
+                }
+
+                frear() {
+                    console.log('Freando')
+                }
+
+                desligar() {
+                    console.log('Desligando')
+                }
+            }
+
+            const carro1 = new Carro()
+            const carro2 = new Carro()
+
+            carro1.setMarca('Fiat')
+            carro1.setModelo('Argo')
+            carro1.setCor('Branco')
+            carro1.setQtdePortas(4)
+
+            console.log(carro1)
+
+            console.log(carro1.getMarca())
+            console.log(carro1.getModelo())
+            console.log(carro1.getCor())
+            console.log(carro1.getQtdePortas())
+
+            carro1.ligar()
+            carro1.acelerar()
+            carro1.frear()
+            carro1.desligar()
+
+            console.log("-----------------------")
+
+            carro2.setMarca('Hyundai')
+            carro2.setModelo('HB20')
+            carro2.setCor('Preto')
+            carro2.setQtdePortas(4)
+
+            console.log(carro2)
+
+            console.log(carro2.getMarca())
+            console.log(carro2.getModelo())
+            console.log(carro2.getCor())
+            console.log(carro2.getQtdePortas())
+
+            carro2.ligar()
+            carro2.acelerar()
+            carro2.frear()
+            carro2.desligar()
+
+            const carro3 = {
+                'marca' : 'Toyota',
+                'modelo' : 'Etios',
+                'cor' : 'Prata',
+                'qtdePortas' : '4'
+            } 
+
+            console.log('------------------')
+
+            console.log(carro3)
+            console.log(carro3.cor)
+ 
+        </script>
+    </body>
+</html>
