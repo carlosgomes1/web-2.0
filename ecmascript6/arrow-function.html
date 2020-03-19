@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Arrow Function </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            let quadrado = function(x) {
+                return x * x
+            }
+
+            let quadrado1 = (x) => { return x * x }
+
+            let quadrado2 = x => x * x  // return implicito
+
+            document.write( quadrado1(3) )
+            document.write( quadrado2(6) )
+
+            let parOuImpar = function( number ) {
+                if( number % 2 === 0 ) {
+                    return 'par'
+                } else {
+                    return 'impar'
+                }
+            }
+
+            let parOuImpar2 = number => number % 2 === 0 ? 'par' : 'impar'
+
+            console.log(parOuImpar(9))
+            console.log(parOuImpar2(146))
+ 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Var e Let </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            // 3 escopos: global, function, bloco
+
+            /* var serie = 'Friends'
+
+            console.log(serie + ' GLOBAL')
+
+            function x() {
+                var serie = 'The Flash'
+
+                console.log(serie + ' FUNÇÃO')
+
+                if( true ) {
+                    console.log(serie + ' BLOCO DA FUNÇÃO')
+
+                }
+            }
+
+            x()
+
+            if( true ) {
+                console.log(serie + ' BLOCO')
+                let serie = 'Caco'
+            }
+
+            console.log(serie) */
+
+            let serie = 'Sex Education'
+
+            {
+                let serie = 'Game of Thrones'
+                console.log(serie + ' BLOCO')
+            }
+            console.log(serie + ' GLOBAL')
+
+        </script>
+    </body>
+</html>
