@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Funções construtoras </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            let Carro = function( cor, modelo, velocidadeAtual, velocidadeMaxima ) {
+                this.cor = cor
+                this.modelo = modelo
+                this.velocidadeAtual = velocidadeAtual
+                this.velocidadeMaxima = velocidadeMaxima
+
+                this.acelerar = () => {
+                    let velocidade = this.getVelocidadeAtual() + 10
+                    this.setVelocidadeAtual( velocidade )
+                }
+
+                this.getVelocidadeAtual = () => {
+                    return this.velocidadeAtual
+                }
+
+                this.setVelocidadeAtual = ( velocidadeAtual ) => {
+                    this.velocidadeAtual = velocidadeAtual
+                }
+            }
+
+            let carro = new Carro('Branco', 'Argo', 0, 220)
+
+            console.log(`A velocidade atual é: ${ carro.getVelocidadeAtual() }`)
+            carro.acelerar()
+            carro.acelerar()
+            console.log(`A velocidade atual é: ${ carro.getVelocidadeAtual() }`)
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Funções factory </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            let Bicicleta1 = {
+                cor: 'Verde',
+                marcha: 'Unica',
+                aro: 12,
+                pedalar() { console.log('PEDALAR OK...................') }
+            }
+
+            let Bicicleta2 = {
+                cor: 'Vermelho',
+                marcha: '18',
+                aro: 15,
+                pedalar() { console.log('PEDALAR OK...................') }
+            }
+
+            console.log(Bicicleta1)
+            console.log(Bicicleta2)
+
+            let BicicletaFactory = ( cor, marcha, aro ) => {
+                return {
+                    cor: cor,
+                    marcha: marcha,
+                    aro: aro,
+                    pedalar() { console.log('PEDALAR OK...................') }
+                }
+            }
+
+            let Bicicleta3 = BicicletaFactory('Amarelo', 'Marcha na boneca', 12)
+
+            console.log(Bicicleta3)
+
+        </script>
+    </body>
+</html>
