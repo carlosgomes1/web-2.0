@@ -16,43 +16,11 @@
         <script type="text/babel">
 
             class ContaBancaria {
-                constructor() {
-                    this.agencia
-                    this.numeroConta
-                    this.saldo
-                    this.limite
-                }
-
-                setAgencia( agencia ) {
+                constructor( agencia, numeroConta, saldo, limite ) {
                     this.agencia = agencia
-                }
-
-                getAgencia() {
-                    return this.agencia
-                }
-
-                setNumeroConta( numeroConta ) {
                     this.numeroConta = numeroConta
-                }
-
-                getNumeroConta() {
-                    return this.numeroConta
-                }
-
-                setSaldo( saldo ) {
                     this.saldo = saldo
-                }
-
-                getSaldo() {
-                    return this.saldo
-                }
-
-                setLimite( limite ) {
                     this.limite = limite
-                }
-
-                getLimite() {
-                    return this.limite
                 }
 
                 // acoes
@@ -70,16 +38,11 @@
                 }
             }
 
-            const conta1 = new ContaBancaria()
-
-            conta1.setAgencia(7131)
-            conta1.setNumeroConta(195708)
-            conta1.setSaldo(1000)
-            conta1.setLimite(3200)
+            const conta1 = new ContaBancaria(7131, 195708, 1000, 3200)
 
             console.log(conta1)
-            console.log(`Agência: ${ conta1.getAgencia() }, 
-            Conta: ${ conta1.getNumeroConta() }, 
+            console.log(`Agência: ${ conta1.agencia }, 
+            Conta: ${ conta1.numeroConta }, 
             Saldo: ${ conta1.consultarSaldo() }
             `)
 
@@ -87,19 +50,20 @@
 
             conta1.depositar(740)
 
-            console.log(`Agência: ${ conta1.getAgencia() }, 
-            Conta: ${ conta1.getNumeroConta() }, 
+            console.log(`Agência: ${ conta1.agencia }, 
+            Conta: ${ conta1.numeroConta }, 
             Saldo: ${ conta1.consultarSaldo() }
             `)
 
             console.log('--------------------------------------')
 
             conta1.sacar(368)
-            
-            console.log(`Agência: ${ conta1.getAgencia() }, 
-            Conta: ${ conta1.getNumeroConta() }, 
+
+            console.log(`Agência: ${ conta1.agencia }, 
+            Conta: ${ conta1.numeroConta }, 
             Saldo: ${ conta1.consultarSaldo() }
             `)
+            
  
         </script>
     </body>

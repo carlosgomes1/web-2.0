@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> POO - Abstração - Conta Bancária </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            class Tv {
+                constructor() {
+                    this._relacaoCanais = [
+                        2,
+                        4,
+                        5,
+                        7,
+                        13
+                    ]
+                    this._canalAtivo = 5
+                    this._volume = 25
+                }
+
+                get canalAtivo() {
+                    return this._canalAtivo
+                }
+
+                set canalAtivo( canal ) {
+                    let x = this._relacaoCanais.indexOf(canal)
+
+                    if( x === -1 ) {
+                        console.log('Canal não existe')
+                    } else {
+                        this._canalAtivo = canal
+                    }
+                }
+            }
+
+            const tv1 = new Tv()
+            tv1.canalAtivo = 7
+            console.log(tv1.canalAtivo)
+ 
+        </script>
+    </body>
+</html>

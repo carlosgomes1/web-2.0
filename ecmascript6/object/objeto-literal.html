@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Objeto Literal </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            class Produto {
+                constructor( descricao, preco ) {
+                    this.descricao = descricao
+                    this.preco = preco
+                }
+
+                verDescricao() {
+                    console.log(`${ this.descricao } por apenas R$${ this.preco }`)
+                }
+            }
+
+            const notebook = new Produto('Notebook DELL Gamer Inspiron', 3600)
+            notebook.verDescricao()
+
+            const produtoLiteral = {
+                descricao: 'Notebook DELL',
+                preco: 1500,
+                verDescricao: ( descricao, preco ) => {
+                    console.log(`${ descricao } por apenas R$${ preco }`)
+                }
+            }
+
+            produtoLiteral.verDescricao(produtoLiteral.descricao, produtoLiteral.preco)
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> POO - Herança </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            class Animal {
+                constructor() {
+                    this.cor
+                    this.tamanho
+                }
+
+                dormir() {
+                    console.log('Dormindo...')
+                }
+            }
+
+            class Cachorro extends Animal {
+                constructor() {
+                    super()
+                    this.orelha
+                }
+
+                correr() {
+                    console.log('Correndo...')
+                }
+
+                rosnar() {
+                    console.log('Rosnando...')
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor() {
+                    super()
+                    this.bico
+                }
+
+                voar() {
+                    console.log('Voando...')
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor() {
+                    super()
+                    this.sabeFalar
+                }
+
+                falar() {
+                    if( this.sabeFalar ) {
+                        console.log('Falando.....')
+                    } else {
+                        console.log('Papagaio não fala')
+                    }
+                }
+
+            }
+
+            const cachorro1 = new Cachorro()
+
+            cachorro1.cor = 'Amarelo'
+            cachorro1.tamanho = 'Grande'
+            cachorro1.orelhas = 'Caidas'
+
+            console.log(cachorro1.cor)
+            console.log(cachorro1.tamanho)
+            console.log(cachorro1.orelhas)
+            cachorro1.correr()
+            cachorro1.rosnar()
+            cachorro1.dormir()
+
+            console.log('----------------------------')
+            
+            const passaro1 = new Passaro()
+
+            passaro1.cor = 'Marrom'
+            passaro1.tamanho = 'Pequeno'
+            passaro1.bico = 'Pontudo'
+
+            console.log(passaro1.cor)
+            console.log(passaro1.tamanho)
+            console.log(passaro1.bico)
+            passaro1.voar()
+            passaro1.dormir()
+
+            console.log('----------------------------')
+
+            const papagaio = new Papagaio()
+
+            papagaio.cor = 'Marrom'
+            papagaio.tamanho = 'Pequeno'
+            papagaio.bico = 'Pontudo'
+            papagaio.sabeFalar = true
+
+            console.log(papagaio.cor)
+            console.log(papagaio.tamanho)
+            console.log(papagaio.bico)
+            papagaio.voar()
+            papagaio.dormir()
+            papagaio.falar()
+ 
+        </script>
+    </body>
+</html>

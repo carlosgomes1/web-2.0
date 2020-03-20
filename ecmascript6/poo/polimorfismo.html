@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> POO - Polimorfismo </title>
+
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script type="text/babel">
+
+            class Animal {
+                constructor(cor, tamanho) {
+                    this.cor = cor
+                    this.tamanho = tamanho
+                }
+
+                dormir() {
+                    console.log('Dormindo.......')
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor(cor, tamanho, bico) {
+                    super(cor, tamanho)
+                    this.bico = bico
+                }
+
+                voar() {
+                    console.log('Voar.......')
+                }
+            }
+
+            class Avestruz extends Passaro {
+                constructor(cor, tamanho, bico) {
+                    super(cor, tamanho, bico)
+                }
+
+                enterrarCabeca() {
+                    console.log('Enterrando cabeça.............')
+                }
+
+                voar() {
+                    console.log('Avestruz não voa')
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor(cor, tamanho, bico, sabeFalar) {
+                    super(cor, tamanho, bico)
+                    this.sabeFalar = sabeFalar
+                }
+
+                falar() {
+                    if( saberFalar ) {
+                        console.log('Falando.........')
+                    } else {
+                        console.log('Papagaio não fala')
+                    }
+                }
+            }
+
+            const avestruz = new Avestruz('Marrom', 200, 'Pontudo')
+            console.log(avestruz)
+            avestruz.enterrarCabeca()
+            avestruz.voar()
+
+            const papagaio = new Papagaio('Verde', 80, 'Médio', true)
+            console.log(papagaio)
+            papagaio.voar()
+
+        </script>
+    </body>
+</html>
